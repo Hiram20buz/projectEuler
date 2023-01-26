@@ -34,7 +34,23 @@ class Solution(object):
         return(dp[n])
         
         
-out = Solution().fib(33)
-print(out)
-#number_str = str(int(1.5640891676957637e+308))
-#print(number_str)
+out = Solution()
+#print(out.fib(33))
+
+suma=0
+for i in range(1,34):
+    if(out.fib(i)%2==0):
+        #print(suma)
+        #print("")
+        #print(out.fib(i))
+        #print("")
+        suma+=out.fib(i)
+
+#print(out.fib(32))        
+#print(out.fib(33))
+print(suma)
+    
+
+
+
+
