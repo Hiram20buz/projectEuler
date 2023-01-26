@@ -1,3 +1,34 @@
 #2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 
 #What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
+def action(t):
+    count=0
+    #div=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+    for number in range(1,21):
+        if((t%number)==0):
+            #print(number)
+            count+=1
+    
+    for i in range(1,t):
+        if(count==20):
+            return i
+        else :
+            return 0
+            
+     #
+     
+    
+    #return count
+            
+#print(action(9699690))
+#i get 9699690 by multiplying prime numbers
+#print(action(698377680))
+#i get 698377680 by multiplying *2*2*2*9
+#Now to verify is the smallest
+#print(action(232792560))
+
+for i in range(9699690,232792561):
+    if(action(i)):
+        print(i)
+    
