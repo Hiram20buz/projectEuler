@@ -50,7 +50,21 @@ for i in range(1,34):
 #print(out.fib(33))
 print(suma)
     
+    
+#Another solution with python
 
+def fibonacci_iter(limit):
+    a, b = 0, 1
+    while a < limit:
+        yield a
+        a, b = b, a + b
 
+#print (sum(a for a in fibonacci_iter(4e6) if not (a & 1)))
+suma=0
+for a in fibonacci_iter(4e6):
+    #print(a)
+    if not (a & 1):
+        #print(a)
+        suma+=a
 
-
+print(suma)
