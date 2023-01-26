@@ -13,6 +13,13 @@ fibonacci = (function() {
     return (_ref = memo[n]) != null ? _ref : memo[n] = fib(n - 1) + fib(n - 2);
   };
 })();
-console.log(fibonacci(34));
-if (fibonacci(34) <= 4000000){ console.log("true")}
-else{console.log("false")}
+//console.log(fibonacci(33));
+let suma=0;
+for (let i = 1; i < 34; i++) {
+  if (!(fibonacci(i)&1)) {
+  //console.log(fibonacci(i));
+  suma=suma+fibonacci(i);
+}
+}
+
+console.log(suma);
