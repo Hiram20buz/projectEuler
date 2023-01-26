@@ -63,10 +63,9 @@ def getmax():
         
     return tempo
  
-for are in getmax():
-     print(are)
+#for are in getmax():
+     #print(are)
         
-        
-        
-        
+print( "max is: ",max(getmax()))
+
 
