@@ -2,6 +2,21 @@
 
 #What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
+def x(t):
+    if (t%9699690==0):
+        return True
+    
+    
+    
+#9699690 is 2*3*5*7*11*13*17*19
+def y():
+    num=[]
+    for i in range (96996900,300000000,2):
+        if(x(i)):
+            num.append(i)
+            
+    return num
+            
 def action(t):
     count=0
     #div=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
@@ -16,19 +31,11 @@ def action(t):
         else :
             return 0
             
-     #
-     
-    
-    #return count
             
-#print(action(9699690))
-#i get 9699690 by multiplying prime numbers
-#print(action(698377680))
-#i get 698377680 by multiplying *2*2*2*9
-#Now to verify is the smallest
-#print(action(232792560))
-
-for i in range(9699690,232792561):
+for i in y():
     if(action(i)):
         print(i)
-    
+            
+            
+            
+            
