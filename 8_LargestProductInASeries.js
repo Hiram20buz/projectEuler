@@ -25,11 +25,12 @@ Find the thirteen adjacent digits in the 1000-digit number that have the greates
 */
 
 /*
-
 https://gist.github.com/arekusuri/c06caadbd352d5ee0eb5
 https://www.samanthaming.com/tidbits/83-4-ways-to-convert-string-to-character-array/
-
+https://www.programiz.com/javascript/array
+https://stackoverflow.com/questions/35417772/looping-array-for-largest-number-using-foreach
 */
+
 let string = `73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
 85861560789112949495459501737958331952853208805511
