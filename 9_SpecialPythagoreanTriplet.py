@@ -1,11 +1,22 @@
-https://stackoverflow.com/questions/42752743/check-if-three-numbers-can-form-a-pythagorean-triple
-nums = []
+#A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
 
-for num in range(0,3):
-    nums.append(int(input("Enter a number")))
+#a**2 + b**2 = c**2
+#For example, 3**2 + 4**2 = 9 + 16 = 25 = 5**2.
 
-if ((nums[0] ** 2) + (nums[1] ** 2) == (nums[2] ** 2)):
-    print(True)
-    
-if ((nums[0] ** 2) + (nums[1] ** 2) == (1000-nums[0]-nums[1])** 2):
-    print(True)
+#There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+#Find the product abc.
+
+import math
+def pythagorean_triplet(n):
+    num=[]
+    for b in range(n):
+        for a in range(1, b):
+            c = math.sqrt( a * a + b * b)
+            suma = a+b+c
+            if (c % 1 == 0 and suma==1000):
+                print(a, b, int(c))
+                print(a*b*c)
+                
+                
+pythagorean_triplet(1000)
+
